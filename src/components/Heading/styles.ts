@@ -1,6 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 import { HeadingProps } from '.';
-
 const titleSize = {
   small: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.medium};
@@ -30,6 +29,7 @@ const titleCase = (uppercase: boolean) => css`
 export const Title = styled.h1<HeadingProps>`
   ${({ theme, colorDark, size, uppercase }) => css`
     color: ${colorDark ? theme.colors.primaryColor : theme.colors.white};
+    line-height: 1.2;
     ${titleSize[size](theme)};
     ${titleCase(uppercase)};
   `}

@@ -28,8 +28,8 @@ describe('<Menu />', () => {
     expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
     expect(screen.queryByLabelText('Open menu')).not.toBeInTheDocument();
     expect(screen.getByRole('navigation')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Otávio Miranda' }));
-    expect(screen.getByRole('img', { name: 'Otávio Miranda' }));
+    expect(screen.getByRole('heading', { name: 'Cristopher Martarello' }));
+    expect(screen.getByRole('img', { name: 'Cristopher Martarello' }));
     expect(
       screen.getByRole('navigation').querySelectorAll('a:not([href="/"])'),
     ).toHaveLength(mock.links.length);

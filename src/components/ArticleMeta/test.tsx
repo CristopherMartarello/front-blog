@@ -7,8 +7,8 @@ describe('<ArticleMeta />', () => {
   it('should render author and category links', () => {
     renderTheme(<ArticleMeta {...props} />);
     expect(
-      screen.getByRole('link', { name: 'Otávio Miranda' }),
-    ).toHaveAttribute('href', '/author/otavio-miranda');
+      screen.getByRole('link', { name: 'Cristopher Martarello' }),
+    ).toHaveAttribute('href', '/author/cristopher-martarello');
     expect(screen.getByRole('link', { name: 'Tech' })).toHaveAttribute(
       'href',
       '/category/tech',
